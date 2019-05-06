@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+int a,b,c,big;
+printf("enter three number \n");
+scanf("%d%d%d",&a,&b,&c);
+big=a;
+if(big>b&&big>c)
+{
+big=a;
+}
+if(big<b&&big<c)
+{
+big=(c>b?c:b);
+{ big=c;
+}
+if(big<b&&big>c)
+{ big=b;
+}
+printf("the largest of the three is %d \n",big);
+}
+}
